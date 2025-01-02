@@ -1,0 +1,36 @@
+.clock {
+  display: flex;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  font-size: 2rem;
+}
+
+.separator {
+  margin: 0 10px;
+}
+
+.time-unit {
+  position: relative;
+  height: 2.5rem;
+  width: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.digit {
+  position: absolute;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
